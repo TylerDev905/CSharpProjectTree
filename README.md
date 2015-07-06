@@ -14,3 +14,15 @@ Features
 7. Colored labels, by setting the DrawMode property to OwnerDrawMode and supplying an arraylist of CustomNode structures labels can be colorized using regex for parsing.
 8. Default project Root is in My Documents.
 ```
+
+Example
+```cs
+ProjectTree projectTree1 = new ProjectTree();
+projectTree1.Setup(); //defaulted root = my documents
+projectTree1.DrawMode = TreeViewDrawMode.OwnerDrawText;
+
+//Add custom node structure array here if you want colored labels.
+//Contextmenu modifications or replacements should be set here as well.
+
+projectTree1.InitializeComponent();
+```
