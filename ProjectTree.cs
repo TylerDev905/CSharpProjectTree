@@ -76,7 +76,7 @@ class ProjectTree : TreeView
         return item;
     }
 
-    private void OnMenuItemClick(object sender, EventArgs e)
+    public virtual void OnMenuItemClick(object sender, EventArgs e)
     {
         ToolStripMenuItem item = (ToolStripMenuItem)sender;
         switch (item.Text)
